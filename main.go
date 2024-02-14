@@ -24,6 +24,8 @@ func main() {
 
 	// Order Controller
 	r.POST("/rentalcar/v1/post/order", controllers.PostOrderV1)
+	r.PUT("/rentalcar/v1/put/order/:id", controllers.PutOrderV1)
+	r.DELETE("/rentalcar/v1/delete/order/:id", controllers.DeleteOrderV1)
 	r.GET("/rentalcar/v1/get/order", controllers.GetOrderV1)
 	r.GET("/rentalcar/v1/get/order/:id", controllers.GetOrderV1ById)
 
