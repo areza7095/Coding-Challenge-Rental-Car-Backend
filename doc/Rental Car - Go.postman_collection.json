@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "6e7b4a2e-b125-47c1-9d85-e1fde878b07f",
+		"name": "Rental Car - Go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19474450"
+	},
+	"item": [
+		{
+			"name": "V1",
+			"item": [
+				{
+					"name": "POST Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"car_name\": \"Tesla Model X\",\n    \"day_rate\": 12,\n    \"month_rate\": 12,\n    \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqmIu0j0IDKPPvBDSesIOWNHHs6lOzBUtfA&usqp=CAU\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/post/car",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"post",
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"car_id\": 7,\n    \"order_date\": \"2024-02-15T11:32:00Z\", // Sending Time using UTC\n    \"pickup_date\": \"2024-03-26T13:40:00Z\", // Sending Time using UTC\n    \"dropoff_date\": \"2024-10-15T20:45:00Z\", // Sending Time using UTC\n    \"pickup_location\": \"Jakarta Selatan, Kebayoran\",\n    \"dropoff_location\": \"Jakarta Selatan, Senayan\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/post/order",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"post",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Car",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"car_name\": \"Hyundai IONIQ 6\" // uncomment the data if want to update\n    // \"day_rate\": 12\n    // \"month_rate\": 6\n    // \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqmIu0j0IDKPPvBDSesIOWNHHs6lOzBUtfA&usqp=CAU\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/put/car/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"put",
+								"car",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"order_date\": \"2024-02-15T18:32:00+07:00\",  // uncomment the data if want to update\n    // \"pickup_date\": \"2024-03-26T20:40:00+07:00\",\n    // \"dropoff_date\": \"2024-10-16T03:45:00+07:00\",\n    \"pickup_location\": \"Bekasi, Jatisari\",\n    \"dropoff_location\": \"Jakarta Selatan, Senayan\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/put/order/5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"put",
+								"order",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Car",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"CarName\": \"Tesla Y11 UPDATED\", // uncomment the data if want to update\n    // \"DayRate\": 12\n    \"MonthRate\": 6\n    // \"Image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqmIu0j0IDKPPvBDSesIOWNHHs6lOzBUtfA&usqp=CAU\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/delete/car/6",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"delete",
+								"car",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"CarName\": \"Tesla Y11 UPDATED\", // uncomment the data if want to update\n    // \"DayRate\": 12\n    \"MonthRate\": 6\n    // \"Image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqmIu0j0IDKPPvBDSesIOWNHHs6lOzBUtfA&usqp=CAU\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/delete/order/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"delete",
+								"order",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Cars",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/get/car",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"get",
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Orders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/get/order",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"get",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Cars By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CarId\": 11,\n    \"CarName\": \"Tesla Y\",\n    \"DayRate\": 12,\n    \"MonthRate\": 12,\n    \"Image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqmIu0j0IDKPPvBDSesIOWNHHs6lOzBUtfA&usqp=CAU\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/get/car/11",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"get",
+								"car",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Order By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentalcar/v1/get/order/5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentalcar",
+								"v1",
+								"get",
+								"order",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
