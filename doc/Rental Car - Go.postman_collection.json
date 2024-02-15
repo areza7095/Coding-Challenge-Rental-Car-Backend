@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"car_name\": \"Tesla Model X\",\n    \"day_rate\": 12,\n    \"month_rate\": 12,\n    \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqmIu0j0IDKPPvBDSesIOWNHHs6lOzBUtfA&usqp=CAU\"\n}",
+							"raw": "{\n    \"car_name\": \"Tesla Model Y\",\n    \"day_rate\": 12,\n    \"month_rate\": 12,\n    \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqmIu0j0IDKPPvBDSesIOWNHHs6lOzBUtfA&usqp=CAU\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -24,11 +24,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/post/car",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/post/car",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
@@ -46,7 +49,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"car_id\": 7,\n    \"order_date\": \"2024-02-15T11:32:00Z\", // Sending Time using UTC\n    \"pickup_date\": \"2024-03-26T13:40:00Z\", // Sending Time using UTC\n    \"dropoff_date\": \"2024-10-15T20:45:00Z\", // Sending Time using UTC\n    \"pickup_location\": \"Jakarta Selatan, Kebayoran\",\n    \"dropoff_location\": \"Jakarta Selatan, Senayan\"\n}",
+							"raw": "{\n    \"car_id\": 1,\n    \"order_date\": \"2024-02-15T11:32:00Z\", // Sending Time using UTC\n    \"pickup_date\": \"2024-03-26T13:40:00Z\", // Sending Time using UTC\n    \"dropoff_date\": \"2024-10-15T20:45:00Z\", // Sending Time using UTC\n    \"pickup_location\": \"Bogor, Cileungsi\",\n    \"dropoff_location\": \"Bekasi, Jatiasih\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -54,11 +57,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/post/order",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/post/order",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
@@ -84,17 +90,20 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/put/car/4",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/put/car/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
 								"put",
 								"car",
-								"4"
+								"1"
 							]
 						}
 					},
@@ -107,7 +116,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    // \"order_date\": \"2024-02-15T18:32:00+07:00\",  // uncomment the data if want to update\n    // \"pickup_date\": \"2024-03-26T20:40:00+07:00\",\n    // \"dropoff_date\": \"2024-10-16T03:45:00+07:00\",\n    \"pickup_location\": \"Bekasi, Jatisari\",\n    \"dropoff_location\": \"Jakarta Selatan, Senayan\"\n}",
+							"raw": "{\n    // \"order_date\": \"2024-02-15T18:32:00+07:00\",  // uncomment the data if want to update\n    // \"pickup_date\": \"2024-03-26T20:40:00+07:00\",\n    // \"dropoff_date\": \"2024-10-16T03:45:00+07:00\",\n    \"pickup_location\": \"Jakarta Selatan, Tanah Kusir\",\n    // \"dropoff_location\": \"Jakarta Selatan, Senayan\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -115,17 +124,20 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/put/order/5",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/put/order/2",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
 								"put",
 								"order",
-								"5"
+								"2"
 							]
 						}
 					},
@@ -146,11 +158,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/delete/car/6",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/delete/car/6",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
@@ -177,17 +192,20 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/delete/order/3",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/delete/order/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
 								"delete",
 								"order",
-								"3"
+								"1"
 							]
 						}
 					},
@@ -211,11 +229,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/get/car",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/get/car",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
@@ -244,11 +265,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/get/order",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/get/order",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
@@ -277,17 +301,20 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/get/car/11",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/get/car/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
 								"get",
 								"car",
-								"11"
+								"1"
 							]
 						}
 					},
@@ -311,17 +338,20 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/rentalcar/v1/get/order/5",
+							"raw": "https://rental-car-backend-production.up.railway.app/rentalcar/v1/get/order/2",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"rental-car-backend-production",
+								"up",
+								"railway",
+								"app"
 							],
-							"port": "3000",
 							"path": [
 								"rentalcar",
 								"v1",
 								"get",
 								"order",
-								"5"
+								"2"
 							]
 						}
 					},
