@@ -8,7 +8,7 @@ This project is a backend project built using Golang, and the Gin, Gorm, Godoten
   - [Commands](#package-commands)
 - [Development](#wrench-development)
   - [File Structure](#file_folder-file-structure)
-  - [Deployment](#rocket-deployment)  
+  - [Production](#rocket-deployment)  
 
 
 ## :zap: Usage
