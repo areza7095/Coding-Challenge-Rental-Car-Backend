@@ -8,6 +8,8 @@ This project is a backend project built using Golang, and the Gin, Gorm, Godoten
   - [Commands](#package-commands)
 - [Development](#wrench-development)
   - [File Structure](#file_folder-file-structure)
+  - [Deployment](#rocket-deployment)  
+
 
 ## :zap: Usage
 How to run the project
@@ -71,3 +73,8 @@ Add a file structure here with the basic details about files, below is an exampl
 | 8  | .env | Environment Variable
 | 9  | .env.example | Environment Variable Example
 
+### :rocket: Production
+For using production ready use this endpoint 
+```
+$ https://rental-car-backend-production.up.railway.app/rentalcar/v1/get/car
+```
